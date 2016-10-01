@@ -5,7 +5,7 @@ const babelify = require('babelify');
 module.exports = {
   // options object for browserify
   browserify: {
-    entries: ['./src/js/main.jsx'],
+    entries: ['./src/js/main.js', './src/js/main.jsx'],
     transform: [babelify.configure({
       presets: ['es2015', 'react']
     })],

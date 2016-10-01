@@ -16,6 +16,12 @@ module.exports = () => {
   const bundler = browserify(config.browserify);
 
   return bundler.bundle()
+    .on('error', function error(err) {
+      gutil.log(err.message);
+      gutil.log(gutil.colors.yellow('Please remove unneeded JavaScript ' +
+        'entry files from the Browserify configuration in gulpfile.js.'));
+      this.emit('end');
+    })
     .pipe(source('bundle.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
