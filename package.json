@@ -1,11 +1,10 @@
 {
-  "name": "snake",
+  "name": "gulp-preset",
   "version": "0.1.0",
-  "description": "",
+  "description": "Preset for frontend web development with Gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify src/main.js -o build/bundle.js -v"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Samuel Kaiser <samuel.kaiser01@gmail.com>",
   "license": "MIT",
