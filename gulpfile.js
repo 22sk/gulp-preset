@@ -2,7 +2,7 @@
 
 // https://www.viget.com/articles/gulp-browserify-starter-faq
 const gulp = require('./gulp')(
-  ['browserify', 'watchify', 'htmlmin', 'watch', 'sass']
+  ['browserify', 'watchify', 'htmlmin', 'server', 'sass']
 );
 
 /*
