@@ -11,7 +11,7 @@ const buffer = require('vinyl-buffer');
 const sourcemaps = require('gulp-sourcemaps');
 
 const config = require('../../gulpconfig');
-const server = require('./server');
+const server = require('../server');
 
 module.exports = () => {
   const bs = server(); // eslint-disable-line global-require

@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const server = require('./server');
+const server = require('../server');
 const config = require('../../gulpconfig');
 
 module.exports = () => {
