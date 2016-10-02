@@ -26,7 +26,7 @@ const config = {
   src: 'src/**', // base directory for all source files
   dest: 'dist',  // destination for compiled files
   bundler: {
-    entries: ['./src/js/main.jsx'],
+    entries: ['./src/js/main.js'],
     transform: [babelify.configure({
       presets: ['es2015', 'react']
     })],
